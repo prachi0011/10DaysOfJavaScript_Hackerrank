@@ -1,0 +1,61 @@
+<!-- Enter your HTML code here -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Buttons Grid</title>
+       <!-- <link rel="stylesheet" href="css/buttonsGrid.css" type="text/css">-->
+      <style>
+        #btns{
+    margin:auto;
+    width : 75%;
+    display:flex;
+    flex-wrap: wrap;
+    
+}
+#btns > button{
+    width : 30%;
+    height : 48px;
+    font-size : 24px;
+    margin:auto auto;
+}
+      </style>
+    </head>
+    <body>
+        <div id="btns">
+            <button id="btn1">1</button>
+            <button id="btn2">2</button>
+            <button id="btn3">3</button>
+            <button id="btn4">4</button>
+            <button id="btn5" onclick="rotate();">5</button>
+            <button id="btn6">6</button>
+            <button id="btn7">7</button>
+            <button id="btn8">8</button>
+            <button id="btn9">9</button>
+        </div>
+      
+      <script>
+        rotate=()=>{
+    a=document.getElementById("btn1").innerHTML;
+    b=document.getElementById("btn2").innerHTML;
+    c=document.getElementById("btn3").innerHTML;
+    d=document.getElementById("btn6").innerHTML;
+    e=document.getElementById("btn9").innerHTML;
+    f=document.getElementById("btn8").innerHTML;
+    g=document.getElementById("btn7").innerHTML;
+    h=document.getElementById("btn4").innerHTML;
+    
+    document.getElementById("btn2").innerHTML = a;
+    document.getElementById("btn3").innerHTML = b;
+    document.getElementById("btn6").innerHTML = c;
+    document.getElementById("btn9").innerHTML = d;
+    document.getElementById("btn8").innerHTML = e;
+    document.getElementById("btn7").innerHTML = f;
+    document.getElementById("btn4").innerHTML = g;
+    document.getElementById("btn1").innerHTML = h;
+
+}
+      </script>
+       <!-- <script src="js/buttonsGrid.js" type="text/javascript"></script>-->
+    </body>
+</html>
